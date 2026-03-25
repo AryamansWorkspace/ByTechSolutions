@@ -4,11 +4,11 @@ body{
 margin:0;
 font-family:'Montserrat',sans-serif;
 background:#111;
-color:#F8E1D9;
+color:#080357;
 overflow-x:hidden;
 }
 
-/* VIDEO BACKGROUND */
+/* VIDEO */
 
 #bg-video{
 position:fixed;
@@ -19,13 +19,7 @@ object-fit:cover;
 z-index:-2;
 }
 
-body::after{
-content:"";
-position:fixed;
-inset:0;
-background:rgba(20,0,0,0.65);
-z-index:-1;
-}
+/* ❌ REMOVED DARK OVERLAY (FIXED ISSUE) */
 
 /* NAVBAR */
 
@@ -34,11 +28,11 @@ position:fixed;
 top:25px;
 left:50%;
 transform:translateX(-50%);
-background:rgba(80,0,0,0.85);
+background:#8BCFFC;
 padding:14px 45px;
 border-radius:14px;
 backdrop-filter:blur(6px);
-box-shadow:0 0 20px rgba(255,214,194,.4);
+box-shadow:0 0 20px rgba(8,3,87,.4);
 z-index:100;
 }
 
@@ -50,7 +44,7 @@ align-items:center;
 
 .navbar a{
 font-family:'Bebas Neue',sans-serif;
-color:#FFD6C2;
+color:#080357;
 letter-spacing:3px;
 font-size:24px;
 text-decoration:none;
@@ -65,20 +59,20 @@ left:0;
 bottom:-6px;
 width:0%;
 height:2px;
-background:#FFD6C2;
+background:#080357;
 transition:.3s;
 }
 
 .navbar a:hover{
 transform:translateY(-5px);
-text-shadow:0 0 12px #FFD6C2;
+text-shadow:0 0 12px #080357;
 }
 
 .navbar a:hover::after{
 width:100%;
 }
 
-/* SMALL LOGO */
+/* LOGO */
 
 .logo-small{
 position:fixed;
@@ -105,8 +99,8 @@ padding:180px 8% 100px;
 font-family:'Bebas Neue',sans-serif;
 font-size:170px;
 letter-spacing:6px;
-color:#FFD6C2;
-text-shadow:0 0 35px rgba(255,214,194,.8);
+color:#080357;
+text-shadow:0 0 35px rgba(8,3,87,.7);
 }
 
 .hero img{
@@ -120,7 +114,7 @@ transition:.4s;
 transform:scale(1.05);
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
 padding:90px 8%;
@@ -131,8 +125,8 @@ font-family:'Bebas Neue',sans-serif;
 font-size:65px;
 text-align:center;
 letter-spacing:4px;
-color:#FFD6C2;
-text-shadow:0 0 20px rgba(255,214,194,.7);
+color:#080357;
+text-shadow:0 0 20px rgba(8,3,87,.6);
 }
 
 .section h2::after{
@@ -140,7 +134,7 @@ content:"";
 display:block;
 width:130px;
 height:3px;
-background:#FFD6C2;
+background:#080357;
 margin:15px auto 0;
 }
 
@@ -165,7 +159,7 @@ margin-top:40px;
 }
 
 .card{
-background:rgba(255,255,255,.06);
+background:rgba(255,255,255,.08);
 padding:22px;
 border-radius:14px;
 text-align:center;
@@ -174,7 +168,7 @@ transition:.3s;
 
 .card:hover{
 transform:translateY(-10px) scale(1.04);
-box-shadow:0 0 25px rgba(255,214,194,.5);
+box-shadow:0 0 25px rgba(8,3,87,.5);
 }
 
 .card img{
@@ -190,7 +184,7 @@ margin-bottom:12px;
 .contact-wrapper{
 max-width:850px;
 margin:50px auto;
-background:rgba(0,0,0,.45);
+background:rgba(0,0,30,.4);
 padding:45px;
 border-radius:14px;
 }
@@ -203,13 +197,14 @@ margin-bottom:18px;
 border:none;
 border-radius:8px;
 background:rgba(255,255,255,.1);
-color:white;
+color:#080357;
 }
 
 .contact-wrapper button{
 width:100%;
 padding:16px;
-background:#FFD6C2;
+background:#080357;
+color:white;
 border:none;
 border-radius:8px;
 font-weight:bold;
@@ -219,7 +214,7 @@ cursor:pointer;
 /* FOOTER */
 
 .footer{
-background:#FAD6A5;
+background:#8BCFFC;
 text-align:center;
 padding:55px 20px;
 margin-top:100px;
@@ -238,15 +233,15 @@ transform:translateY(0);
 font-family:'Poppins',sans-serif;
 font-size:34px;
 font-weight:700;
-color:#7A0000;
-text-shadow:0 0 18px rgba(139,0,0,.8);
+color:#080357;
+text-shadow:0 0 18px rgba(8,3,87,.7);
 margin-bottom:20px;
 }
 
 .footer-divider{
 width:70px;
 height:2px;
-background:#7A0000;
+background:#080357;
 margin:15px auto 25px;
 }
 
@@ -258,7 +253,7 @@ gap:12px;
 margin:12px 0;
 font-family:'Poppins',sans-serif;
 font-weight:600;
-color:#7A0000;
+color:#080357;
 }
 
 .footer-item img{
@@ -268,31 +263,14 @@ transition:.3s;
 
 .footer-item img:hover{
 transform:scale(1.15);
-filter:drop-shadow(0 0 6px #7A0000);
+filter:drop-shadow(0 0 6px #080357);
 }
 
 .footer-dev{
 margin-top:25px;
 font-family:'Poppins',sans-serif;
 font-size:14px;
-color:#7A0000;
+color:#080357;
 font-weight:600;
 letter-spacing:1px;
-}
-
-@media(max-width:900px){
-
-.hero{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-.hero h1{
-font-size:90px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
 }
